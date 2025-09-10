@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bozorg, Vol. 2 - مهراد هیدن</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="index.html" class="brand-title">مهراد هیدن</a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html#home" class="nav-link">خانه</a>
+                    <a href="index.html#albums" class="nav-link">آلبوم‌ها</a>
+                    <a href="index.html#all-tracks" class="nav-link">آهنگ‌ها</a>
+                    <a href="index.html#about" class="nav-link">درباره</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Album Page Content -->
+    <section class="album-page">
+        <div class="container">
+            <div class="album-header">
+                <img src="/mehrad-hidden-album-cover-dark-purple.jpg" alt="Bozorg Vol. 2" class="album-modal-cover">
+                <div class="album-modal-info">
+                    <h2>Bozorg, Vol. 2</h2>
+                    <p class="album-year">2015</p>
+                    <p class="album-description">
+                        دومین جلد از مجموعه "بزرگ" که شامل آهنگ‌های پرانرژی و ملودیک است. این آلبوم نقطه عطفی در کار مهراد هیدن محسوب می‌شود.
+                    </p>
+                    <p class="album-stats">6 آهنگ • 24 دقیقه</p>
+                </div>
+            </div>
+            
+            <div class="album-tracks">
+                <div class="album-track-item" onclick="playAlbumTrack('bozorg-vol2', 0)">
+                    <div class="track-number">1</div>
+                    <img src="/placeholder.svg?height=50&width=50" alt="Track Cover" class="track-thumb">
+                    <div class="track-info">
+                        <h4 class="track-name">شروع جدید</h4>
+                    </div>
+                    <div class="track-duration">4:15</div>
+                    <button class="track-play-btn">▶</button>
+                </div>
+                
+                <div class="album-track-item" onclick="playAlbumTrack('bozorg-vol2', 1)">
+                    <div class="track-number">2</div>
+                    <img src="/placeholder.svg?height=50&width=50" alt="Track Cover" class="track-thumb">
+                    <div class="track-info">
+                        <h4 class="track-name">راه طولانی</h4>
+                    </div>
+                    <div class="track-duration">3:52</div>
+                    <button class="track-play-btn">▶</button>
+                </div>
+                
+                <div class="album-track-item" onclick="playAlbumTrack('bozorg-vol2', 2)">
+                    <div class="track-number">3</div>
+                    <img src="/placeholder.svg?height=50&width=50" alt="Track Cover" class="track-thumb">
+                    <div class="track-info">
+                        <h4 class="track-name">بزرگ</h4>
+                    </div>
+                    <div class="track-duration">5:23</div>
+                    <button class="track-play-btn">▶</button>
+                </div>
+                
+                <div class="album-track-item" onclick="playAlbumTrack('bozorg-vol2', 3)">
+                    <div class="track-number">4</div>
+                    <img src="/placeholder.svg?height=50&width=50" alt="Track Cover" class="track-thumb">
+                    <div class="track-info">
+                        <h4 class="track-name">آرامش</h4>
+                    </div>
+                    <div class="track-duration">4:08</div>
+                    <button class="track-play-btn">▶</button>
+                </div>
+                
+                <div class="album-track-item" onclick="playAlbumTrack('bozorg-vol2', 4)">
+                    <div class="track-number">5</div>
+                    <img src="/placeholder.svg?height=50&width=50" alt="Track Cover" class="track-thumb">
+                    <div class="track-info">
+                        <h4 class="track-name">انرژی</h4>
+                    </div>
+                    <div class="track-duration">3:45</div>
+                    <button class="track-play-btn">▶</button>
+                </div>
+                
+                <div class="album-track-item" onclick="playAlbumTrack('bozorg-vol2', 5)">
+                    <div class="track-number">6</div>
+                    <img src="/placeholder.svg?height=50&width=50" alt="Track Cover" class="track-thumb">
+                    <div class="track-info">
+                        <h4 class="track-name">پایان</h4>
+                    </div>
+                    <div class="track-duration">2:37</div>
+                    <button class="track-play-btn">▶</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="container">
+            <div class="player-content">
+                <div class="current-track">
+                    <img src="/placeholder.svg?height=60&width=60" alt="Current Track" class="current-cover" id="currentCover">
+                    <div class="current-info">
+                        <h6 class="current-title" id="currentTitle">آهنگ انتخاب نشده</h6>
+                        <p class="current-album" id="currentAlbum"></p>
+                    </div>
+                </div>
+
+                <div class="player-controls">
+                    <button class="control-btn" onclick="prevTrack()">⏮</button>
+                    <button class="control-btn play-pause-btn" onclick="togglePlayPause()" id="playPauseBtn">▶</button>
+                    <button class="control-btn" onclick="nextTrack()">⏭</button>
+                </div>
+
+                <div class="player-progress">
+                    <span class="time-current" id="currentTime">0:00</span>
+                    <div class="progress-bar" onclick="seekTo(event)">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="time-duration" id="duration">0:00</span>
+                    <button class="control-btn volume-btn">🔊</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audioPlayer" preload="metadata"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

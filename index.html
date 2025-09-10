@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهراد هیدن - سایت رسمی موزیک</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1 class="brand-title">Mehrad Hidden</h1>
+                </div>
+                <!-- نوار جستجو در وسط منو با استایل بهتر -->
+                <div class="nav-search">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="جستجوی آهنگ، آلبوم..." class="search-input">
+                        <button class="search-btn" onclick="performSearch()">🔍</button>
+                    </div>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">خانه</a>
+                    <a href="#albums" class="nav-link">آلبوم‌ها</a>
+                    <a href="#all-tracks" class="nav-link">آهنگ‌ها</a>
+                    <a href="#about" class="nav-link">درباره</a>
+                </div>
+                <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="artist-photo">
+                    <img src="/images/mehrad3.jpg" alt="مهراد هیدن" class="artist-img">
+                </div>
+                <h2 class="hero-title">مهراد هیدن</h2>
+                <p class="hero-subtitle">خواننده و ترانه‌سراي هیپ‌هاپ و آلترناتیو</p>
+                <div class="waveform">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Albums Section -->
+    <section id="albums" class="albums-section">
+        <div class="container">
+            <h3 class="section-title">آلبوم‌ها</h3>
+            <div class="albums-grid">
+                <a href="bozorg-vol2.html" class="album-card">
+                    <div class="album-content">
+                        <img src="/images/albom/Bozorg-Vol-2.jpeg" alt="Bozorg Vol. 2" class="album-cover">
+                        <div class="album-info">
+                            <h4 class="album-title">Bozorg, Vol. 2</h4>
+                            <p class="album-year">2015</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="toonel-vol1.html" class="album-card">
+                    <div class="album-content">
+                        <img src="/images/albom/Toonel-Vol-1.jpeg" alt="Toonel Vol. 1" class="album-cover">
+                        <div class="album-info">
+                            <h4 class="album-title">Toonel, Vol. 1</h4>
+                            <p class="album-year">2017</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="sefr.html" class="album-card">
+                    <div class="album-content">
+                        <img src="/images/albom/Sefr.jpeg" alt="Sefr" class="album-cover">
+                        <div class="album-info">
+                            <h4 class="album-title">Sefr</h4>
+                            <p class="album-year">2018</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="sallakh.html" class="album-card">
+                    <div class="album-content">
+                        <img src="/images/albom/sallakh.jpg" alt="Sallakh" class="album-cover">
+                        <div class="album-info">
+                            <h4 class="album-title">Sallakh</h4>
+                            <p class="album-year">2018</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="toonel-vol2.html" class="album-card">
+                    <div class="album-content">
+                        <img src="/images/albom/Toonel-Vol-2.jpeg" alt="Toonel Vol. 2" class="album-cover">
+                        <div class="album-info">
+                            <h4 class="album-title">Toonel, Vol. 2</h4>
+                            <p class="album-year">2020</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="Alavis1.html" class="album-card">
+                    <div class="album-content">
+                        <img src="/images/albom/Alavis-1.jpg" alt="Alavis1" class="album-cover">
+                        <div class="album-info">
+                            <h4 class="album-title">Alavis 1</h4>
+                            <p class="album-year">2021</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="zoozanaghe.html" class="album-card">
+                    <div class="album-content">
+                        <img src="/images/albom/Zoozanaghe.jpeg" alt="Zoozanaghe" class="album-cover">
+                        <div class="album-info">
+                            <h4 class="album-title">Zoozanaghe</h4>
+                            <p class="album-year">2022</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="Alavis2.html" class="album-card">
+                    <div class="album-content">
+                        <img src="/images/albom/Alavis-2.jpg" alt="Alavis2" class="album-cover">
+                        <div class="album-info">
+                            <h4 class="album-title">Alavis 2</h4>
+                            <p class="album-year">2024</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="pizza.html" class="album-card">
+                    <div class="album-content">
+                        <img src="/images/albom/Pizza.jpeg" alt="Pizza" class="album-cover">
+                        <div class="album-info">
+                            <h4 class="album-title">Pizza</h4>
+                            <p class="album-year">2024</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tracks Section -->
+    <section id="popular-tracks" class="popular-tracks-section">
+        <div class="container">
+            <h3 class="section-title">جدیدترین آهنگ‌ها</h3>
+            <div class="popular-tracks-grid">
+                <div class="popular-track-card" onclick="playTrack(0)">
+                    <div class="track-cover-container">
+                        <img src="/images/new/Khodaye-Binahayat.jpg" alt="Khodaye-Binahayat" class="track-cover">
+                        <div class="track-cover-overlay">
+                            <button class="big-play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="track-details">
+                        <h4 class="track-title">Khodaye Binahayat</h4>
+                        <div class="track-stats">
+                            <span class="play-count">278k پخش</span>
+                            <span class="duration">3:57</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-track-card" onclick="playTrack(3)">
+                    <div class="track-cover-container">
+                        <img src="/images/new/Heart-Shaped-Box.jpg" alt="Heart-Shaped-Box" class="track-cover">
+                        <div class="track-cover-overlay">
+                            <button class="big-play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="track-details">
+                        <h4 class="track-title">Heart Shaped Box</h4>
+                        <div class="track-stats">
+                            <span class="play-count">25k پخش</span>
+                            <span class="duration">3:10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-track-card" onclick="playTrack(1)">
+                    <div class="track-cover-container">
+                        <img src="/images/new/sargardoon.jpg" alt="sargardoon" class="track-cover">
+                        <div class="track-cover-overlay">
+                            <button class="big-play-btn">▶</button>
+                        </div>
+                    </div>
+                    <div class="track-details">
+                        <h4 class="track-title">sargardoon</h4>
+                        <div class="track-stats">
+                            <span class="play-count">171k پخش</span>
+                            <span class="duration">3:59</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Tracks Section -->
+    <section id="all-tracks" class="all-tracks-section">
+        <div class="container">
+            <h3 class="section-title">همه آهنگ‌ها</h3>
+            <div class="tracks-header">
+                <div class="track-number">#</div>
+                <div class="track-title-header">عنوان</div>
+                <div class="track-duration-header">مدت زمان</div>
+            </div>
+            <div class="all-tracks-list" id="allTracksList">
+                <!-- آهنگ‌ها از JavaScript لود می‌شوند -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h3 class="section-title">درباره مهراد هیدن</h3>
+                <p class="about-text">
+                    مهراد هیدن یکی از پیشگامان موزیک الکترونیک در ایران است که با ترکیب سبک‌های مدرن و سنتی، آثار منحصر به فردی
+                    خلق کرده است. موزیک او ترکیبی از ملودی‌های عمیق و ریتم‌های پیچیده است که شنونده را به سفری در دنیای صوت
+                    می‌برد.
+                </p>
+                <div class="about-actions">
+                    <button class="btn btn-primary">دانلود آهنگ‌ها</button>
+                    <button class="btn btn-secondary">اشتراک‌گذاری</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="container">
+            <div class="player-content">
+                <div class="current-track">
+                    <img src="/placeholder.svg?height=60&width=60" alt="Current Track" class="current-cover" id="currentCover">
+                    <div class="current-info">
+                        <h6 class="current-title" id="currentTitle">آهنگ انتخاب نشده</h6>
+                        <a id="downloadBtn" href="#" class="btn btn-download" download>دانلود آهنگ</a>
+                    </div>
+                </div>
+                <div class="player-controls">
+                    <button class="control-btn" onclick="prevTrack()">⏮</button>
+                    <button class="control-btn play-pause-btn" onclick="togglePlayPause()" id="playPauseBtn">▶</button>
+                    <button class="control-btn" onclick="nextTrack()">⏭</button>
+                </div>
+                <div class="player-progress">
+                    <span class="time-current" id="currentTime">0:00</span>
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="time-duration" id="duration">0:00</span>
+                    <div class="volume-control">
+                        <span class="volume-icon">🔊</span>
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audioPlayer" preload="metadata"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
