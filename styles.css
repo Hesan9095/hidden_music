@@ -633,13 +633,14 @@ body {
 
 .btn-secondary {
   background: transparent;
-  color: #deb887;
-  border: 2px solid #deb887;
+  color: black;
+  background-color: white;
+  border: 2px solid #ab6b0a;
 }
 
 .btn-secondary:hover {
-  background: #deb887;
-  color: #0f0f23;
+  background: #a3610b;
+  color: white;
 }
 
 /* Music Player */

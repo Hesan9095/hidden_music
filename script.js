@@ -4,21 +4,21 @@ const tracks = [
     id: 1,
     title: "Khodaye Binahayat",
     cover: "/images/new/Khodaye-Binahayat.jpg",
-    duration: "3:57",
+    duration: "3:51",
     file: "https://visit1.navahang.net/media/2025/mp3/07/hq/Mehrad%20Hidden%20-%20Khodaye%20Binahayat.mp3",
   },
   {
     id: 2,
     title: "Heart Shaped Box (Cover)",
     cover: "/images/new/Heart-Shaped-Box.jpg",
-    duration: "3:10",
+    duration: "3:09",
     file: "https://visit1.navahang.net/media/2025/mp3/07/hq/Mehrad%20Hidden%20-%20Heart%20Shaped%20Box%20(Cover).mp3",
   },
   {
     id: 3,
     title: "Sargardoon",
     cover: "/images/new/sargardoon.jpg",
-    duration: "3:59",
+    duration: "3:58",
     file: "https://visit1.navahang.net/media/2025/mp3/05/hq/Mehrad%20Hidden%20&%20Kaviano%20-%20Sargardoon.mp3",
   },
   {
@@ -39,7 +39,7 @@ const tracks = [
     id: 6,
     title: "Karma",
     cover: "/images/covor/Karma.jpg",
-    duration: "3:31",
+    duration: "3:30",
     file: "/audio/toonel.mp3",
   },
   {
