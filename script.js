@@ -270,8 +270,8 @@ const albums = {
     description: "آلبومی درباره شروع‌های تازه و بازگشت به نقطه صفر.",
     tracks: [11, 12, 13, 14, 15],
   },
-  "ep-salakh": {
-    title: "EP Salakh",
+  "esalakh": {
+    title: "Salakh",
     year: "2019",
     cover: "/mehrad-hidden-second-album-cover-modern.jpg",
     description: "EP کوتاه و قدرتمند با مضامین اجتماعی و سیاسی.",
@@ -284,12 +284,26 @@ const albums = {
     description: "ادامه سری تونل با عمق بیشتر و پیچیدگی‌های صوتی.",
     tracks: [20, 21, 22, 23, 24, 25],
   },
+  "alavis1": {
+    title: "Alavis 1",
+    year: "2020",
+    cover: "/mehrad-hidden-album-cover-dark-purple.jpg",
+    description: "ادامه سری تونل با عمق بیشتر و پیچیدگی‌های صوتی.",
+    tracks: [20, 21, 22, 23, 24, 25],
+  },
   "zoozanaghe": {
     title: "Zoozanaghe",
     year: "2022",
     cover: "/mehrad-hidden-second-album-cover-modern.jpg",
     description: "آلبومی با الهام از اشکال هندسی و ساختارهای ریاضی.",
     tracks: [26, 27, 28, 29, 30],
+  },
+  "alavis2": {
+    title: "Alavis 2",
+    year: "2024",
+    cover: "/mehrad-hidden-album-cover-dark-purple.jpg",
+    description: "ادامه سری تونل با عمق بیشتر و پیچیدگی‌های صوتی.",
+    tracks: [20, 21, 22, 23, 24, 25],
   },
   "pizza": {
     title: "Pizza",

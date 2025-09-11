@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهراد هیدن - Pizza</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a class="brandlink" href="../../index.html">
+                        <h1 class="brand-title">Mehrad Hidden</h1>
+                    </a>
+                </div>
+                <div class="nav-search">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="جستجوی آهنگ..." class="search-input">
+                        <button class="search-btn" onclick="performSearch()">🔍</button>
+                    </div>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                <div class="nav-links">
+                    <a href="../../index.html#home" class="nav-link">خانه</a>
+                    <a href="../../index.html#albums" class="nav-link">آلبوم‌ها</a>
+                    <a href="../../index.html#all-tracks" class="nav-link">آهنگ‌ها</a>
+                    <a href="../../index.html#about" class="nav-link">درباره</a>
+                </div>
+                <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Album Page -->
+    <section class="album-page">
+        <div class="container">
+            <div class="album-header">
+                <img src="../../images/albom/Pizza.jpeg" alt="pizza" class="album-cover-large">
+                <h2 class="album-title">Pizza</h2>
+                <p class="album-year">2024</p>
+                <p class="album-description">نهمین آلبوم رسمی مهراد هیدن</p>
+            </div>
+            <div class="album-tracks">
+                <div class="tracks-header">
+                    <div class="track-number">#</div>
+                    <div class="track-title-header">عنوان</div>
+                    <div class="track-duration-header">مدت زمان</div>
+                </div>
+                <div class="album-tracks-list" id="albumTracksList">
+                    <!-- آهنگ‌ها از JavaScript لود می‌شوند -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="container">
+            <div class="player-content">
+                <div class="current-track">
+                    <img src="/placeholder.svg?height=60&width=60" alt="Current Track" class="current-cover" id="currentCover">
+                    <div class="current-info">
+                        <h6 class="current-title" id="currentTitle">آهنگ انتخاب نشده</h6>
+                        <a id="downloadBtn" href="#" class="btn btn-download" download>دانلود آهنگ</a>
+                    </div>
+                </div>
+                <div class="player-controls">
+                    <button class="control-btn" onclick="prevTrack()">⏮</button>
+                    <button class="control-btn play-pause-btn" onclick="togglePlayPause()" id="playPauseBtn">▶</button>
+                    <button class="control-btn" onclick="nextTrack()">⏭</button>
+                </div>
+                <div class="player-progress">
+                    <span class="time-current" id="currentTime">0:00</span>
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="time-duration" id="duration">0:00</span>
+                    <div class="volume-control">
+                        <span class="volume-icon">🔊</span>
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audioPlayer" preload="metadata"></audio>
+
+    <script src="pizza-script.js"></script>
+</body>
+</html>
