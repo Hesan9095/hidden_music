@@ -153,60 +153,37 @@
     </section>
 
     <!-- Popular Tracks Section -->
-    <section id="popular-tracks" class="popular-tracks-section">
+    <section id="songs" class="albums-section">
         <div class="container">
-            <h3 class="section-title">جدیدترین آهنگ‌ها</h3>
-            <div class="popular-tracks-grid">
-                <div class="popular-track-card" onclick="playTrack(0)">
-                    <div class="track-cover-container">
-                        <img src="images/new/Khodaye-Binahayat.jpg" alt="Khodaye-Binahayat" class="track-cover">
-                        <div class="track-cover-overlay">
-                            <button class="big-play-btn">▶</button>
+            <h2 class="section-title">جدیدترین آهنگ‌ها</h2>
+            <div class="albums-grid">
+                <a href="#" class="album-card" onclick="event.preventDefault(); playTrack(0)">
+                    <div class="album-content">
+                        <img src="images/new/Khodaye-Binahayat.jpg" alt="Khodaye Binahayat" class="album-cover">
+                        <div class="album-info">
+                            <h4>Khodaye Binahayat</h4>
+                            <p>278k پخش • 3:51</p>
                         </div>
                     </div>
-
-                    <div class="track-details">
-                        <h4 class="track-title">Khodaye Binahayat</h4>
-                        <div class="track-stats">
-                            <span class="play-count">278k پخش</span>
-                            <span class="duration">3:51</span>
+                </a>
+                <a href="#" class="album-card" onclick="event.preventDefault(); playTrack(1)">
+                    <div class="album-content">
+                        <img src="images/new/Heart-Shaped-Box.jpg" alt="Heart Shaped Box" class="album-cover">
+                        <div class="album-info">
+                            <h4>Heart Shaped Box</h4>
+                            <p>25k پخش • 3:10</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="popular-track-card" onclick="playTrack(1)">
-                    <div class="track-cover-container">
-                        <img src="images/new/Heart-Shaped-Box.jpg" alt="Heart-Shaped-Box" class="track-cover">
-                        <div class="track-cover-overlay">
-                            <button class="big-play-btn">▶</button>
+                </a>
+                <a href="#" class="album-card" onclick="event.preventDefault(); playTrack(2)">
+                    <div class="album-content">
+                        <img src="images/new/sargardoon.jpg" alt="sargardoon" class="album-cover">
+                        <div class="album-info">
+                            <h4>sargardoon</h4>
+                            <p>171k پخش • 3:59</p>
                         </div>
                     </div>
-
-                    <div class="track-details">
-                        <h4 class="track-title">Heart Shaped Box</h4>
-                        <div class="track-stats">
-                            <span class="play-count">25k پخش</span>
-                            <span class="duration">3:10</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="popular-track-card" onclick="playTrack(2)">
-                    <div class="track-cover-container">
-                        <img src="images/new/sargardoon.jpg" alt="sargardoon" class="track-cover">
-                        <div class="track-cover-overlay">
-                            <button class="big-play-btn">▶</button>
-                        </div>
-                    </div>
-
-                    <div class="track-details">
-                        <h4 class="track-title">sargardoon</h4>
-                        <div class="track-stats">
-                            <span class="play-count">171k پخش</span>
-                            <span class="duration">3:59</span>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>

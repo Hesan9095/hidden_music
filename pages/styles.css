@@ -109,10 +109,20 @@ body {
   font-size: 0.9rem;
   flex: 1;
   outline: none;
+  font-family: "Vazirmatn", sans-serif; /* فونت اصلی body */
+  font-weight: 400; /* وزن فونت رو هم مشخص کن اگر لازم باشه */
+  line-height: 1.4; /* برای هم‌خوانی با body */
 }
 
 .nav-search .search-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+  font-family: "Vazirmatn", sans-serif; /* فونت placeholder */
+  font-weight: 400;
+  opacity: 1; /* برای سازگاری با مرورگرها */
+}
+
+.nav-search .search-bar:focus-within .search-input {
+  font-family: "Vazirmatn", sans-serif; /* وقتی focus می‌شه هم حفظ بشه */
 }
 
 .nav-search .search-btn {
@@ -234,6 +244,10 @@ body {
   min-height: 100vh;
 }
 
+.album-tracks{
+  margin-bottom: 5rem;
+}
+
 .album-header {
   text-align: center;
   padding: 2rem;
@@ -335,7 +349,6 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(15, 15, 35, 0.95);
   backdrop-filter: blur(15px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: .7rem 0;
@@ -496,38 +509,311 @@ body {
 }
 
 /* Responsive Design */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .new-container {
+    padding: 0 1.5rem;
+  }
+
+  .albums-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .album-cover {
+    height: 280px;
+  }
+
+  .player-progress {
+    gap: 0.8rem;
+    padding: 0 1rem;
+  }
+
+  .time-current,
+  .time-duration {
+    font-size: 0.85rem;
+    min-width: 35px;
+  }
+
+  .progress-bar {
+    height: 5px;
+  }
+
+  .current-cover {
+    width: 60px;
+    height: 60px;
+  }
+
+  .current-info h6 {
+    font-size: 1rem;
+  }
+
+  .btn-download {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .control-btn {
+    font-size: 1.1rem;
+    padding: 0.4rem;
+  }
+
+  .play-pause-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .brand-title {
+    font-size: 1.4rem;
+  }
+
+  .nav-search {
+    max-width: none;
+    flex: 1;
+    margin: 0;
+  }
+
+  .nav-search .search-input {
+  font-family: "Vazirmatn", sans-serif;
+  }
+
+  .nav-search .search-input::placeholder {
+  font-family: "Vazirmatn", sans-serif;
+  }
+
+  .nav-search .search-btn {
+    display: none;
+  }
+
   .nav-links {
     display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(15, 15, 35, 0.98);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 15px 15px;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.8rem;
+    z-index: 1002;
+    width: 200px;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   .mobile-menu-btn {
     display: flex;
   }
 
-  .nav-search {
-    max-width: 200px;
-    margin: 0 1rem;
+  .hero-title {
+    font-size: 2.2rem;
   }
 
-  .album-cover-large {
-    width: 250px;
-    height: 250px;
-  }
-
-  .album-title {
+  .section-title {
     font-size: 2rem;
   }
 
-  .player-content {
+  .albums-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .popular-tracks-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .popular-track-card {
+    padding: 1rem;
+  }
+
+  .track-cover {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .album-cover {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .album-cover-large {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .player-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
+    padding: 0.5rem 0;
     text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .player-progress {
+    order: -1;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 100%;
+    padding: 0 0.8rem;
+  }
+
+  .current-track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .player-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .control-btn {
+    background: transparent;
+    border: none;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+  }
+
+  .control-btn:hover {
+    background: rgba(99, 102, 241, 0.3);
+    transform: scale(1.1);
+  }
+
+  .play-pause-btn {
+    background: linear-gradient(45deg, #6366f1, #8b5cf6);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .play-pause-btn:hover {
+    background: linear-gradient(45deg, #8b5cf6, #6366f1);
+    transform: scale(1.1);
+  }
+
+  .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .volume-icon {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+  }
+
+  .volume-slider {
+    width: 80px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #6366f1;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .volume-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #6366f1;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .time-current,
+  .time-duration {
+    font-size: 0.8rem;
+    min-width: 30px;
+    color: #a1a1aa;
+  }
+
+  .progress-bar {
+    flex: 1;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2.5px;
+  }
+
+  .progress-fill {
+    background: linear-gradient(45deg, #6366f1, #8b5cf6);
+    border-radius: 2.5px;
   }
 
   .tracks-header,
-  .album-track-item {
-    grid-template-columns: 30px 1fr 80px;
+  .track-item {
+    grid-template-columns: 40px 1fr 80px;
+    gap: 0.8rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .track-item {
+    font-size: 0.9rem;
+  }
+
+  .current-cover {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .current-info h6 {
+    font-size: 0.9rem;
+  }
+
+  .btn-download {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
   }
 }
 
@@ -536,11 +822,184 @@ body {
     padding: 0 1rem;
   }
 
-  .album-title {
+  .brand-title {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
     font-size: 1.8rem;
   }
 
+  .section-title {
+    font-size: 1.7rem;
+  }
+
   .nav-search {
-    max-width: 150px;
+    max-width: none;
+  }
+
+  .nav-links {
+    width: 150px;
+    gap: 0.6rem;
+    padding: 0.8rem;
+  }
+
+  .albums-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .popular-track-card {
+    padding: 0.8rem;
+  }
+
+  .track-cover {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .album-cover {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .album-cover-large {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .player-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0.4rem 0;
+    flex-wrap: wrap;
+  }
+
+  .player-progress {
+    margin-bottom: 0.4rem;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .current-track {
+    margin-right: 1.5rem;
+    gap: 0.6rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .player-controls {
+    margin-left: 1.5rem;
+    gap: 0.6rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .control-btn {
+    font-size: 1rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    padding-bottom: .8rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .control-btn:hover {
+    background: rgba(99, 102, 241, 0.3);
+    transform: scale(1.1);
+  }
+
+  .play-pause-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    padding-left: 1.1rem;
+    padding-top: .7rem;
+    background: linear-gradient(45deg, #6366f1, #8b5cf6);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .play-pause-btn:hover {
+    background: linear-gradient(45deg, #8b5cf6, #6366f1);
+    transform: scale(1.1);
+        padding-right: 1rem;
+  }
+
+  .volume-control {
+    display: none;
+  }
+
+  .time-current,
+  .time-duration {
+    font-size: 0.7rem;
+    min-width: 25px;
+  }
+
+  .progress-bar {
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  .progress-fill {
+    border-radius: 2px;
+  }
+
+  .tracks-header,
+  .track-item {
+    font-size: 12px;
+    grid-template-columns: 65px 1fr 50px;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .album-title{
+    font-size: 2rem;
+  }
+
+  .album-year{
+    font-size: 1rem;
+  }
+
+  .album-description{
+    font-size: .9rem;
+  }
+
+  .track-number {
+    font-size: 0.9rem;
+  }
+
+  .track-title-header{
+    font-size: 15px;
+  }
+
+  .track-title {
+    font-size: 0.7rem;
+  }
+
+  .track-duration {
+    font-size: 0.8rem;
+  }
+
+  .current-cover {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+
+  .current-info h6 {
+    font-size: 0.8rem;
+  }
+
+  .btn-download {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
   }
 }

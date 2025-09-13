@@ -317,14 +317,14 @@ const tracks = [
   },
   {
     id: 46,
-    title: "...Montazer boodan kariye ke",
+    title: "Montazer boodan kariye ke",
     cover: "images/covor/zakhar.jpg",
     duration: "5:07",
     file: "https://ts5.tarafdari.com/contents/user572353/content-sound/zedbazi-montazer-boodan-kaarie-ke-bazi-vaghta-pesara-bara-do_2.mp3",
   },
   {
     id: 47,
-    title: "Pedare man bad mano negah mikone",
+    title: "Pedare man bad mano",
     cover: "images/covor/pedareman.jpg",
     duration: "6:41",
     file: "https://dl.musicchi.net/1402/03/16/Zed%20Bazi%20-%20Pedare%20Man%20Bad%20Mano%20Negah%20Mikone.mp3",
