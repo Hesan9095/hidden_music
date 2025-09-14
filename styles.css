@@ -1272,7 +1272,8 @@ body {
 
   .tracks-header,
   .track-item {
-    grid-template-columns: 30px 1fr 60px;
+    width: 350px;
+    grid-template-columns: 25px 1fr 60px;
     gap: 0.6rem;
     padding: 0.6rem 0.8rem;
   }
@@ -1288,6 +1289,15 @@ body {
   .track-duration {
     font-size: 0.6rem;
   }
+
+  .track-duration-header{
+    font-size: 14px;
+  }
+
+  .track-title-header{
+    margin-right: 1.5rem;
+    font-size: 14px;
+}
 
   .current-cover {
     width: 40px;
