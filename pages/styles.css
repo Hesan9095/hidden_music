@@ -65,8 +65,8 @@ body {
   gap: 2rem;
 }
 
-.brandlink{
-    text-decoration: none;
+.brandlink {
+  text-decoration: none;
 }
 
 .brand-title {
@@ -109,20 +109,16 @@ body {
   font-size: 0.9rem;
   flex: 1;
   outline: none;
-  font-family: "Vazirmatn", sans-serif; /* فونت اصلی body */
-  font-weight: 400; /* وزن فونت رو هم مشخص کن اگر لازم باشه */
-  line-height: 1.4; /* برای هم‌خوانی با body */
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .nav-search .search-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Vazirmatn", sans-serif; /* فونت placeholder */
+  font-family: "Vazirmatn", sans-serif;
   font-weight: 400;
-  opacity: 1; /* برای سازگاری با مرورگرها */
-}
-
-.nav-search .search-bar:focus-within .search-input {
-  font-family: "Vazirmatn", sans-serif; /* وقتی focus می‌شه هم حفظ بشه */
+  opacity: 1;
 }
 
 .nav-search .search-btn {
@@ -244,7 +240,7 @@ body {
   min-height: 100vh;
 }
 
-.album-tracks{
+.album-tracks {
   margin-bottom: 5rem;
 }
 
@@ -318,11 +314,43 @@ body {
   transform: translateY(-2px);
 }
 
+.album-track-item.active {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.3), rgba(75, 0, 130, 0.3));
+  border: 2px solid #cd7ced;
+  transform: scale(1.02);
+  animation: activePulse 0.3s ease-in-out;
+}
+
+.album-track-item.active .track-name {
+  color: #cd7ced;
+  font-weight: 600;
+}
+
+.album-track-item.active .track-number,
+.album-track-item.active .track-duration {
+  color: #cd7ced;
+}
+
+@keyframes activePulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+}
+
 .track-number {
   color: #deb887;
   font-weight: bold;
   margin-right: 1rem;
-      margin-left: 2.5rem;
+  margin-left: 2.5rem;
   font-size: 1.1rem;
 }
 
@@ -579,11 +607,11 @@ body {
   }
 
   .nav-search .search-input {
-  font-family: "Vazirmatn", sans-serif;
+    font-family: "Vazirmatn", sans-serif;
   }
 
   .nav-search .search-input::placeholder {
-  font-family: "Vazirmatn", sans-serif;
+    font-family: "Vazirmatn", sans-serif;
   }
 
   .nav-search .search-btn {
@@ -929,7 +957,7 @@ body {
   .play-pause-btn:hover {
     background: linear-gradient(45deg, #8b5cf6, #6366f1);
     transform: scale(1.1);
-        padding-right: 1rem;
+    padding-right: 1rem;
   }
 
   .volume-control {
@@ -959,15 +987,15 @@ body {
     padding: 0.6rem 1rem;
   }
 
-  .album-title{
+  .album-title {
     font-size: 2rem;
   }
 
-  .album-year{
+  .album-year {
     font-size: 1rem;
   }
 
-  .album-description{
+  .album-description {
     font-size: .9rem;
   }
 
@@ -975,7 +1003,7 @@ body {
     font-size: 0.9rem;
   }
 
-  .track-title-header{
+  .track-title-header {
     font-size: 15px;
   }
 

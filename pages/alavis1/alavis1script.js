@@ -16,7 +16,7 @@ const tracks = [
   },
 ];
 
-// Album data for toonel-vol.1
+// Album data for alavis1
 const albums = {
   "alavis1": {
     title: "Alavis 1",
@@ -191,6 +191,16 @@ function initPlayer() {
     progressBar.addEventListener("mousedown", startDrag);
     progressBar.addEventListener("click", seekTo);
   }
+
+  const trackItems = document.querySelectorAll('.album-track-item');
+  trackItems.forEach((item, i) => {
+    item.classList.toggle('active', i === index);
+  });
+
+  // Set first track as active on page load
+  if (trackItems.length > 0) {
+    trackItems[0].classList.add('active');
+  }
 }
 
 function playTrack(index) {
@@ -198,6 +208,12 @@ function playTrack(index) {
 
   currentTrackIndex = index;
   const track = tracks[currentTrackIndex];
+
+  // Update active track in the UI with animation
+  const trackItems = document.querySelectorAll('.album-track-item');
+  trackItems.forEach((item, i) => {
+    item.classList.toggle('active', i === index);
+  });
 
   if (audio) {
     audio.src = track.file;

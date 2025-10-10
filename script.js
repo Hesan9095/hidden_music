@@ -658,6 +658,8 @@ const progressFill = document.getElementById("progressFill")
 const volumeSlider = document.getElementById("volumeSlider")
 const progressBar = document.getElementById("progressBar")
 
+let currentPlayingElement = null
+
 function initSearch() {
   const searchInput = document.getElementById("searchInput")
   const searchResults = document.getElementById("searchResults")
@@ -827,6 +829,7 @@ function playTrack(index) {
     audio.load()
 
     updatePlayerUI()
+    updatePlayingState()
 
     if (!isPlayerVisible) {
       musicPlayer.style.display = "block"
@@ -960,6 +963,99 @@ function closeMobileMenu() {
   }
 }
 
+function updatePlayingState() {
+  // حذف کلاس playing از المان قبلی
+  if (currentPlayingElement) {
+    currentPlayingElement.classList.remove("playing")
+  }
+
+  const allTrackItems = document.querySelectorAll(".track-item")
+  if (allTrackItems[currentTrackIndex]) {
+    allTrackItems[currentTrackIndex].classList.add("playing")
+    currentPlayingElement = allTrackItems[currentTrackIndex]
+  }
+
+  // آپدیت کردن album cards در بخش جدیدترین آهنگ‌ها
+  const albumCards = document.querySelectorAll("#songs .album-card")
+  albumCards.forEach((card, index) => {
+    if (index === currentTrackIndex) {
+      card.classList.add("playing")
+    } else {
+      card.classList.remove("playing")
+    }
+  })
+}
+
+// تابع جدید برای مدیریت پنل ادمین
+function toggleAdminPanel() {
+  const adminPanel = document.getElementById("adminPanel")
+  if (adminPanel) {
+    adminPanel.classList.toggle("active")
+  }
+}
+
+function addNewTrack(event) {
+  event.preventDefault()
+
+  const title = document.getElementById("trackTitle").value
+  const cover = document.getElementById("trackCover").value
+  const duration = document.getElementById("trackDuration").value
+  const file = document.getElementById("trackFile").value
+
+  if (!title || !cover || !duration || !file) {
+    alert("لطفاً تمام فیلدها را پر کنید")
+    return
+  }
+
+  // ساخت آهنگ جدید
+  const newTrack = {
+    id: tracks.length + 1,
+    title: title,
+    cover: cover,
+    duration: duration,
+    file: file,
+  }
+
+  // اضافه کردن به اول آرایه
+  tracks.unshift(newTrack)
+
+  // بازسازی لیست‌ها
+  generateAllTracksList()
+  updateNewSongsSection()
+
+  // پاک کردن فرم
+  document.getElementById("adminForm").reset()
+
+  // بستن پنل
+  toggleAdminPanel()
+
+  alert("آهنگ با موفقیت اضافه شد!")
+}
+
+function updateNewSongsSection() {
+  const newSongsGrid = document.querySelector("#songs .albums-grid")
+  if (!newSongsGrid) return
+
+  // نمایش 3 آهنگ اول
+  const latestTracks = tracks.slice(0, 3)
+
+  newSongsGrid.innerHTML = latestTracks
+    .map(
+      (track, index) => `
+    <a href="#" class="album-card" onclick="event.preventDefault(); playTrack(${index})">
+      <div class="album-content">
+        <img src="${track.cover}" alt="${track.title}" class="album-cover">
+        <div class="album-info">
+          <h4>${track.title}</h4>
+          <p>${track.duration}</p>
+        </div>
+      </div>
+    </a>
+  `,
+    )
+    .join("")
+}
+
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -1000,6 +1096,11 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileMenuBtn.classList.remove("active")
     }
   })
+
+  const adminForm = document.getElementById("adminForm")
+  if (adminForm) {
+    adminForm.addEventListener("submit", addNewTrack)
+  }
 })
 
 document.addEventListener("keydown", (e) => {
