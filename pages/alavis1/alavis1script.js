@@ -4,15 +4,15 @@ const tracks = [
     id: 1,
     title: "Riona",
     cover: "../../images/albom/alavis-1.jpg",
-    duration: "1:38",
-    file: "https://s6.uupload.ir/filelink/ZCVQq1ixM8oe_7f5e575c3f/mehrad_hidden_heen_-_riona_snippet_-_mehrad_hidden_heen_-_soundloadmate.com_kadm.mp3",
+    duration: "5:33",
+    file: "https://dl.seesound.ir/Music/Hip-Hop/Mehrad%20Hidden/Album/Alavis/Mehrad%20Hidden%20-%20Riona%20(Ft.%20Heen).mp3",
   },
   {
     id: 2,
     title: "Ciara",
     cover: "../../images/albom/alavis-1.jpg",
-    duration: "1:38",
-    file: "https://s6.uupload.ir/filelink/oFrzVNeicg8j_a8a190f5b2/mehrad_hidden_heen_-_ciara_snippet_-_mehrad_hidden_heen_-_soundloadmate.com_vodp.mp3",
+    duration: "4:45",
+    file: "https://dl.seesound.ir/Music/Hip-Hop/Mehrad%20Hidden/Album/Alavis/Mehrad%20Hidden%20%20-%20Ciara%20(Ft.%20Heen).mp3",
   },
 ];
 
