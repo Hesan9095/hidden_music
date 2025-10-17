@@ -2,7 +2,7 @@
 const tracks = [
   {
     id: 1,
-    title: "Rooz az no",
+    title: "Rooz Az No",
     cover: "../../images/albom/Toonel-Vol-1.jpeg",
     duration: "2:56",
     file: "https://dl.music303.com/music303/single/rap/mehradhidden/320/mehrad-hidden-rooz-az-no-music303.com.mp3?_gl=1*c3xcsc*_ga*MTMwOTk4Mjc1NC4xNzU3NTA5OTEx*_ga_7DC8Y8ZT0Q*czE3NTc1OTAxNTQkbzIkZzEkdDE3NTc1OTA5NTckajQkbDAkaDA.",
@@ -44,14 +44,14 @@ const tracks = [
   },
   {
     id: 7,
-    title: "Khabari nis",
+    title: "Khabari Nis",
     cover: "../../images/albom/Toonel-Vol-1.jpeg",
     duration: "4:36",
     file: "https://dl.music303.com/music303/single/rap/mehradhidden/320/Mehrad-Hidden-Khabari-Nis-music303.com.mp3?_gl=1*bzjmq8*_ga*MTMwOTk4Mjc1NC4xNzU3NTA5OTEx*_ga_7DC8Y8ZT0Q*czE3NTc1OTAxNTQkbzIkZzEkdDE3NTc1OTA5NTckajQkbDAkaDA.",
   },
   {
     id: 8,
-    title: "Ghol midam",
+    title: "Ghol Midam",
     cover: "../../images/albom/Toonel-Vol-1.jpeg",
     duration: "5:33",
     file: "https://dl.music303.com/music303/single/rap/mehradhidden/320/mehrad-hidden-ghol-midam-music303.com.mp3?_gl=1*17sul5p*_ga*MTMwOTk4Mjc1NC4xNzU3NTA5OTEx*_ga_7DC8Y8ZT0Q*czE3NTc1OTAxNTQkbzIkZzEkdDE3NTc1OTA5NTckajQkbDAkaDA.",

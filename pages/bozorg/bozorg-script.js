@@ -30,7 +30,7 @@ const tracks = [
   },
   {
     id: 5,
-    title: "Emrooz na",
+    title: "Emrooz Na",
     cover: "../../images/albom/Bozorg-Vol-2.jpeg",
     duration: "3:41",
     file: "https://dl.songcast.ir/%D8%A2%D9%84%D8%A8%D9%88%D9%85%20%D9%87%D8%A7/Bozorg/11.Bozorg%20-%20Emrooz%20Na%20(Ft%20Kiarash).mp3",
@@ -72,7 +72,7 @@ const tracks = [
   },
   {
     id: 11,
-    title: "Kaafi nis",
+    title: "Kaafi Nis",
     cover: "../../images/albom/Bozorg-Vol-2.jpeg",
     duration: "3:34",
     file: "https://dl.songcast.ir/%D8%A2%D9%84%D8%A8%D9%88%D9%85%20%D9%87%D8%A7/Bozorg/03.Bozorg%20-%20Kaafi%20Nist.mp3",
@@ -107,14 +107,14 @@ const tracks = [
   },
   {
     id: 16,
-    title: "Taa tah",
+    title: "Taa Tah",
     cover: "../../images/albom/Bozorg-Vol-2.jpeg",
     duration: "4:20",
     file: "https://dl.songcast.ir/%D8%A2%D9%84%D8%A8%D9%88%D9%85%20%D9%87%D8%A7/Bozorg/04.Bozorg%20-%20Taa%20Tah.mp3",
   },
   {
     id: 17,
-    title: "Tond naro",
+    title: "Tond Naro",
     cover: "../../images/albom/Bozorg-Vol-2.jpeg",
     duration: "4:41",
     file: "https://dl.ememay.ir/Music/Mehrad-Hidden/Bozorg-Vol.2/Tond-Naro-Mehrad-Hidden-Saman-Wilson-320.mp3",
@@ -128,7 +128,7 @@ const tracks = [
   },
   {
     id: 19,
-    title: "Yeki dige",
+    title: "Yeki Dige",
     cover: "../../images/albom/Bozorg-Vol-2.jpeg",
     duration: "4:32",
     file: "https://dl.songcast.ir/%D8%A2%D9%84%D8%A8%D9%88%D9%85%20%D9%87%D8%A7/Bozorg/09.Bozorg%20-%20Yeki%20Dige%20(Ft%20Arash%20Dara).mp3",

@@ -2,14 +2,14 @@
 const tracks = [
   {
     id: 1,
-    title: "Come what may",
+    title: "Come What May",
     cover: "../../images/albom/Alavis-2.jpg",
     duration: "4:27",
     file: "https://dl.solahangs.com/Album/1403/05/Mehrad%20Hidden/320/01.Mehrad%20Hidden%20%26%20Heen%20-%20Come%20What%20May%20%28320%29.mp3",
   },
   {
     id: 2,
-    title: "Dream gone wrong",
+    title: "Dream Gone Wrong",
     cover: "../../images/albom/Alavis-2.jpg",
     duration: "5:17",
     file: "https://dl.solahangs.com/Album/1403/05/Mehrad%20Hidden/320/02.Mehrad%20Hidden%20%26%20Heen%20-%20Dream%20Gone%20Wrong%20%28320%29.mp3",
@@ -30,7 +30,7 @@ const tracks = [
   },
   {
     id: 5,
-    title: "Round and round",
+    title: "Round And Round",
     cover: "../../images/albom/Alavis-2.jpg",
     duration: "5:00",
     file: "https://dl.solahangs.com/Album/1403/05/Mehrad%20Hidden/320/05.Mehrad%20Hidden%20%26%20Heen%20-%20Round%20and%20Round%20%28320%29.mp3",

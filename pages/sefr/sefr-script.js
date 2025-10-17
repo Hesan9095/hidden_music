@@ -16,7 +16,7 @@ const tracks = [
   },
   {
     id: 3,
-    title: "Oon rooz hichvaght nemiad",
+    title: "Oon Rooz Hichvaght Nemiad",
     cover: "../../images/albom/Sefr.jpg",
     duration: "4:40",
     file: "https://dl.mahanmusic.net/album/Hidden/03.%20Mehrad%20Hidden%20-%20Oon%20Rooz%20Hichvaght%20Nemiad-320.mp3",
@@ -30,14 +30,14 @@ const tracks = [
   },
   {
     id: 5,
-    title: "Gorgo mish Pt 1",
+    title: "Gorgo Mish Pt 1",
     cover: "../../images/albom/Sefr.jpg",
     duration: "8:15",
     file: "https://dl.mahanmusic.net/album/Hidden/05.%20Mehrad%20Hidden%20-%20Gorgo%20Mish%20Pt%201-320.mp3",
   },
   {
     id: 6,
-    title: "Gorgo mish Pt 2",
+    title: "Gorgo Mish Pt 2",
     cover: "../../images/albom/Sefr.jpg",
     duration: "5:33",
     file: "https://dl.mahanmusic.net/album/Hidden/06.%20Mehrad%20Hidden%20-%20Gorgo%20Mish%20Pt%202-320.mp3",
@@ -51,14 +51,14 @@ const tracks = [
   },
   {
     id: 8,
-    title: "Az aval",
+    title: "Az Aval",
     cover: "../../images/albom/Sefr.jpg",
     duration: "3:22",
     file: "https://dl.mahanmusic.net/album/Hidden/08.%20Mehrad%20Hidden%20-%20Az%20Aval-320.mp3",
   },
   {
     id: 9,
-    title: "Naa ashna",
+    title: "Naa Ashna",
     cover: "../../images/albom/Sefr.jpg",
     duration: "4:40",
     file: "https://dl.mahanmusic.net/album/Hidden/09.%20Mehrad%20Hidden%20-%20Naa%20Ashna-320.mp3",

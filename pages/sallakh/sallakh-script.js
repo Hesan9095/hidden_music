@@ -2,7 +2,7 @@
 const tracks = [
   {
     id: 1,
-    title: "Lotfan berid aghab",
+    title: "Lotfan Berid Aghab",
     cover: "../../images/albom/sallakh.jpg",
     duration: "2:03",
     file: "https://dl.music303.com/music303/single/rap/mehradhidden/320/Mehrad-Hidden-Lotfan-Berid-Aghab-music303.com.mp3?_gl=1*3nd5h6*_ga*MTMwOTk4Mjc1NC4xNzU3NTA5OTEx*_ga_7DC8Y8ZT0Q*czE3NTc1OTAxNTQkbzIkZzEkdDE3NTc1OTA2ODckajYwJGwwJGgw",

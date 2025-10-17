@@ -3,14 +3,14 @@ const tracks = [
   {
     id: 1,
     title: "Riona",
-    cover: "../../images/albom/alavis-1.jpg",
+    cover: "../../images/albom/Alavis-1.jpg",
     duration: "5:33",
     file: "https://dl.seesound.ir/Music/Hip-Hop/Mehrad%20Hidden/Album/Alavis/Mehrad%20Hidden%20-%20Riona%20(Ft.%20Heen).mp3",
   },
   {
     id: 2,
     title: "Ciara",
-    cover: "../../images/albom/alavis-1.jpg",
+    cover: "../../images/albom/Alavis-1.jpg",
     duration: "4:45",
     file: "https://dl.seesound.ir/Music/Hip-Hop/Mehrad%20Hidden/Album/Alavis/Mehrad%20Hidden%20%20-%20Ciara%20(Ft.%20Heen).mp3",
   },

@@ -2,7 +2,7 @@
 const tracks = [
   {
     id: 1,
-    title: "Solhe daroon va ashti ba oonvar",
+    title: "Solhe Daroon Va Ashti Ba Oonvar",
     cover: "../../images/albom/Toonel-Vol-2.jpeg",
     duration: "4:04",
     file: "https://dl.bandmusic.ir/files/mp3/s1/01%20Solhe%20Daroon%20Va%20Ashti%20Ba%20Oonvar%20-%20Intro%20FT%20pozx.mp3",
@@ -86,7 +86,7 @@ const tracks = [
   },
   {
     id: 13,
-    title: "Khabari nist",
+    title: "Khabari Nist",
     cover: "../../images/albom/Toonel-Vol-2.jpeg",
     duration: "4:35",
     file: "https://dl.bandmusic.ir/files/mp3/s1/13%20Khabari%20Nist%20(Ft%20Sijal)%20[%20Acoustic%20Version%20].mp3",

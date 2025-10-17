@@ -9,14 +9,14 @@ const tracks = [
   },
   {
     id: 2,
-    title: "Bala dastim",
+    title: "Bala Dastim",
     cover: "../../images/albom/Pizza.jpeg",
     duration: "3:35",
     file: "https://dl.pmcmusic.tv/1403/03/Album%20Shayea%C2%A0&%C2%A0Mehrad%20Hidden%20-%20Pizza/Mehrad%20Hidden%20%26%20Shayea%20-%20Bala%20Dastim.mp3",
   },
   {
     id: 3,
-    title: "Be name khoda",
+    title: "Be Name Khoda",
     cover: "../../images/albom/Pizza.jpeg",
     duration: "3:18",
     file: "https://dl.pmcmusic.tv/1403/03/Album%20Shayea%C2%A0&%C2%A0Mehrad%20Hidden%20-%20Pizza/Mehrad%20Hidden%20%26%20Shayea%20-%20Be%20Name%20Khoda.mp3",
