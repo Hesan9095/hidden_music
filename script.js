@@ -460,6 +460,12 @@ const tracks = [
     cover: "images/new/hamoomi.jpeg",
     duration: "4:48",
     file: "https://musictaj.musitraf.com/song404/tabstn/Mehrad%20idden%20-%20Hamoomi%20(128).mp3"
+  },
+  {
+    title: "In Shahr",
+    cover: "images/new/inshahr.jpeg",
+    duration: "4:22",
+    file: "http://tarafdari.com/sites/default/files/contents/user753636/content-sound/01._mehrad_hidden_kaviano_-_in_shahr.mp3"
   }
 ];
 
